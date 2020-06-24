@@ -31,8 +31,25 @@ package liudi;
  * Time: 10:34 上午
  */
 public class Q_9 {
-    public boolean isPalindrome(int x) {
 
-        return false;
+    public static void main(String[] args) {
+        boolean r = isPalindrome(1221);
+        System.out.println();
+    }
+
+    public static boolean isPalindrome(int num) {
+        if (num < 0){
+            return false;
+        }
+
+        int r= 0;
+        int temp = num;
+        do {
+            int y = temp % 10;
+            temp = temp / 10;
+            r = r * 10 + y;
+        } while (temp > 0);
+
+        return r == num;
     }
 }

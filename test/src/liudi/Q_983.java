@@ -1,3 +1,5 @@
+package liudi;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liudidi
